@@ -40,24 +40,27 @@ export default function RootLayout({
                   <span className="font-bold text-lg text-green-50">Dev Studio</span>
                 </Link>
               </div>
-              <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-green-300">
-                <Link href="#features" className="hover:text-green-100 transition-colors">
-                  Features
-                </Link>
-                <Link href="#how-it-works" className="hover:text-green-100 transition-colors">
-                  How It Works
-                </Link>
-                <Link href="#discover" className="hover:text-green-100 transition-colors">
-                  Discover
-                </Link>
-                <Link
-                  href="/dashboard"
-                  className="rounded-lg bg-green-600 px-4 py-2 text-white hover:bg-green-500 transition-colors active:scale-95"
-                >
+              <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-green-300">
+                <Link href="/dashboard" className="hover:text-green-100 transition-colors">
                   Dashboard
                 </Link>
+                <Link href="/ai-agent-arena" className="hover:text-green-100 transition-colors">
+                  AI Arena
+                </Link>
+                <Link href="/ai-app-builder" className="hover:text-green-100 transition-colors">
+                  AI Builder
+                </Link>
+                <Link href="/project-launcher" className="hover:text-green-100 transition-colors">
+                  Projects
+                </Link>
+                <Link
+                  href="#"
+                  className="rounded-lg bg-green-600 px-4 py-2 text-white hover:bg-green-500 transition-colors active:scale-95"
+                >
+                  Get Started
+                </Link>
               </nav>
-              <div className="flex md:hidden">
+              <div className="flex lg:hidden">
                 <MobileNav />
               </div>
             </div>
@@ -80,20 +83,23 @@ function MobileNav() {
         </summary>
         <div className="absolute right-0 top-full mt-2 w-48 rounded-xl border border-green-800 bg-green-900/95 backdrop-blur-md p-2 shadow-xl">
           <nav className="flex flex-col gap-1 text-sm">
-            <Link href="#features" className="rounded-lg px-3 py-2 text-green-200 hover:bg-green-800/50 transition-colors">
-              Features
+            <Link href="/dashboard" className="rounded-lg px-3 py-2 text-green-200 hover:bg-green-800/50 transition-colors">
+              Dashboard
             </Link>
-            <Link href="#how-it-works" className="rounded-lg px-3 py-2 text-green-200 hover:bg-green-800/50 transition-colors">
-              How It Works
+            <Link href="/ai-agent-arena" className="rounded-lg px-3 py-2 text-green-200 hover:bg-green-800/50 transition-colors">
+              AI Arena
             </Link>
-            <Link href="#discover" className="rounded-lg px-3 py-2 text-green-200 hover:bg-green-800/50 transition-colors">
-              Discover
+            <Link href="/ai-app-builder" className="rounded-lg px-3 py-2 text-green-200 hover:bg-green-800/50 transition-colors">
+              AI Builder
+            </Link>
+            <Link href="/project-launcher" className="rounded-lg px-3 py-2 text-green-200 hover:bg-green-800/50 transition-colors">
+              Projects
             </Link>
             <Link
-              href="/dashboard"
+              href="#"
               className="rounded-lg px-3 py-2 bg-green-600 text-white text-center hover:bg-green-500 transition-colors active:scale-95"
             >
-              Dashboard
+              Get Started
             </Link>
           </nav>
         </div>

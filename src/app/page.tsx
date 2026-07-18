@@ -90,16 +90,48 @@ export default function Home() {
                   "Build your public developer profile. Showcase your projects, skills, and development history.",
                 icon: "👤",
               },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="group rounded-2xl border border-green-800 bg-green-900/30 p-6 hover:border-green-600 hover:bg-green-900/50 transition-all hover:scale-[1.02]"
-              >
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-green-100 mb-2">{feature.title}</h3>
-                <p className="text-green-400 leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
+              {
+                title: "AI Agent Arena",
+                description:
+                  "Create AI poker agents, compete in matches and tournaments, track rankings, and view game history.",
+                icon: "🤖",
+                href: "/ai-agent-arena",
+              },
+              {
+                title: "AI App Builder",
+                description:
+                  "Describe an app in plain English and generate, deploy, and publish it in minutes. Supports crypto and community features.",
+                icon: "🧠",
+                href: "/ai-app-builder",
+              },
+              {
+                title: "Project Launcher",
+                description:
+                  "Create projects, group multiple apps under one brand, launch tokens, and manage everything from one dashboard.",
+                icon: "🚀",
+                href: "/project-launcher",
+              },
+            ].map((feature, index) => {
+              const cardContent = (
+                <div
+                  className={`group rounded-2xl border border-green-800 bg-green-900/30 p-6 hover:border-green-600 hover:bg-green-900/50 transition-all hover:scale-[1.02] ${feature.href ? "cursor-pointer" : ""}`}
+                >
+                  <div className="text-4xl mb-4">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold text-green-100 mb-2">{feature.title}</h3>
+                  <p className="text-green-400 leading-relaxed">{feature.description}</p>
+                </div>
+              );
+
+              if (feature.href) {
+                return (
+                  <Link key={index} href={feature.href}>
+                    {cardContent}
+                  </Link>
+                );
+              }
+
+              return <div key={index}>{cardContent}</div>;
+            })}
           </div>
         </div>
       </section>

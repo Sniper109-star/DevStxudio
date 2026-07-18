@@ -246,6 +246,36 @@ export default function Dashboard() {
             <h3 className="text-lg font-semibold text-green-100 mb-4">Quick Actions</h3>
             <div className="space-y-3">
               <Link
+                href="/ai-agent-arena"
+                className="flex items-center gap-3 rounded-xl border border-green-800 bg-green-950/50 p-4 hover:border-green-600 hover:bg-green-900/30 transition-colors group"
+              >
+                <div className="text-xl">🤖</div>
+                <div>
+                  <div className="text-sm font-medium text-green-100 group-hover:text-green-50">AI Agent Arena</div>
+                  <div className="text-xs text-green-500">Compete with poker agents</div>
+                </div>
+              </Link>
+              <Link
+                href="/ai-app-builder"
+                className="flex items-center gap-3 rounded-xl border border-green-800 bg-green-950/50 p-4 hover:border-green-600 hover:bg-green-900/30 transition-colors group"
+              >
+                <div className="text-xl">🧠</div>
+                <div>
+                  <div className="text-sm font-medium text-green-100 group-hover:text-green-50">AI App Builder</div>
+                  <div className="text-xs text-green-500">Generate apps from text</div>
+                </div>
+              </Link>
+              <Link
+                href="/project-launcher"
+                className="flex items-center gap-3 rounded-xl border border-green-800 bg-green-950/50 p-4 hover:border-green-600 hover:bg-green-900/30 transition-colors group"
+              >
+                <div className="text-xl">🚀</div>
+                <div>
+                  <div className="text-sm font-medium text-green-100 group-hover:text-green-50">Project Launcher</div>
+                  <div className="text-xs text-green-500">Group apps and launch tokens</div>
+                </div>
+              </Link>
+              <Link
                 href="#"
                 className="flex items-center gap-3 rounded-xl border border-green-800 bg-green-950/50 p-4 hover:border-green-600 hover:bg-green-900/30 transition-colors group"
               >
@@ -253,26 +283,6 @@ export default function Dashboard() {
                 <div>
                   <div className="text-sm font-medium text-green-100 group-hover:text-green-50">Post Update</div>
                   <div className="text-xs text-green-500">Share your progress</div>
-                </div>
-              </Link>
-              <Link
-                href="#"
-                className="flex items-center gap-3 rounded-xl border border-green-800 bg-green-950/50 p-4 hover:border-green-600 hover:bg-green-900/30 transition-colors group"
-              >
-                <div className="text-xl">👥</div>
-                <div>
-                  <div className="text-sm font-medium text-green-100 group-hover:text-green-50">Find Builders</div>
-                  <div className="text-xs text-green-500">Discover new projects</div>
-                </div>
-              </Link>
-              <Link
-                href="#"
-                className="flex items-center gap-3 rounded-xl border border-green-800 bg-green-950/50 p-4 hover:border-green-600 hover:bg-green-900/30 transition-colors group"
-              >
-                <div className="text-xl">📊</div>
-                <div>
-                  <div className="text-sm font-medium text-green-100 group-hover:text-green-50">View Analytics</div>
-                  <div className="text-xs text-green-500">Track your growth</div>
                 </div>
               </Link>
               <Link
